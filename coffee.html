@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>泰山咖啡莊園</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    #k .btn-close{
+      filter: invert(100);
+    }
+
+    #kc .carousel-item img {
+      object-fit: cover;
+    }
+
+    @media(min-width: 576px) {
+      #myCarousel {
+        height: calc(40vh + 10vw);
+      }
+
+      #kc.carousel {
+        height: 100%;
+      }
+
+      #kc .carousel-inner {
+        height: 100%;
+      }
+
+      #kc .carousel-item {
+        height: 100%;
+      }
+
+      #kc .carousel-item img {
+        height: 100%;
+      }
+    }
+
+    @media(min-width: 992px) {
+      #myCarousel {
+        height: 100vh;
+      }
+      #sec2{
+        height:100vh;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">泰山咖啡莊園</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#k" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="k">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white">MENU</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body bg-dark">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">菜單餐點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">周邊景點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">莊園位置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">咖啡故事</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+
+  <!-- 輪播 -->
+  <section id="myCarousel">
+    <div id="kc" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#kc" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#kc" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#kc" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#kc" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#kc" data-bs-slide-to="4"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- carousel-item 為一個輪播單位，且要為第一個設定 .active -->
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/1080/?random=2" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/1080/?random=3" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/1080/?random=4" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/1080/?random=5" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#kc" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#kc" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 卡片 -->
+  <div id="sec2" class="d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/800/600/?random=1">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/800/600/?random=2">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/800/600/?random=3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- 兩欄 -->
+  <div id="se3">
+      <div class="row">
+        <div class="col-xl-6">
+          <img class="w-100 h-100" src="https://picsum.photos/1200/600/?random=1">
+        </div>
+        <div class="col-xl-6 d-flex justify-content-center align-items-center text-center" >
+          <div>
+            <h2>Coffee Shop</h2>
+            <p>中壢行情高中優點走向很好可憐國內外留言對不起數量，引起規劃對此我看信號風格精選爸爸 出租民間公開尋找消息至少激烈監管，完整用品讓人頻率課程發表只見報價檢查三年，警察盯着屬於維護彷彿，主題告訴，相信降價指南眼神，權利打造簽名日月潭，出口以為話題版權所有安全是我多次面積孤獨必然到達死亡完整，金融高雄我有，舉報效益相對只能運行平台，網路內部策。</p>
+            <a href="#" class="btn btn-primary">VIEW COLLECTION</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 d-flex justify-content-center align-items-center text-center order-sm-1">
+          <div>
+            <h2>Coffee Shop</h2>
+            <p>中壢行情高中優點走向很好可憐國內外留言對不起數量，引起規劃對此我看信號風格精選爸爸 出租民間公開尋找消息至少激烈監管，完整用品讓人頻率課程發表只見報價檢查三年，警察盯着屬於維護彷彿，主題告訴，相信降價指南眼神，權利打造簽名日月潭，出口以為話題版權所有安全是我多次面積孤獨必然到達死亡完整，金融高雄我有，舉報效益相對只能運行平台，網路內部策。</p>
+            <a href="#" class="btn btn-primary">VIEW COLLECTION</a>
+          </div>
+        </div>
+        <div class="col col-xl-6 order-sm-0">
+          <img class="w-100 h-100" src="https://picsum.photos/1200/600/?random=2">
+        </div>
+      </div>
+  </div>
+
+  
+
+  <!--  -->
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
